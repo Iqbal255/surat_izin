@@ -1,0 +1,47 @@
+/* Mengatur halaman agar seluruh background hitam */
+body {
+    background-color: black;  /* Background hitam untuk seluruh halaman */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Membuat area kertas A4 berwarna putih */
+.background {
+    width: 210mm;  /* Lebar A4 */
+    height: 297mm; /* Tinggi A4 */
+    background-color: white; /* Kertas putih */
+    padding: 2cm;  /* Margin 2cm */
+    box-shadow: 0 0 0 10px white; /* Memberikan efek agar kertas terlihat lebih jelas */
+    border: 1px solid #000; /* Border hitam untuk memberi kesan kertas */
+    margin-top: 20px; /* Menambahkan margin atas */
+    margin-bottom: 20px; /* Menambahkan margin bawah */
+}
+
+/* Mengatur elemen surat */
+.surat {
+    text-align: justify;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+}
+
+.judul {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tanggal, .alamat, .perihal {
+    margin-bottom: 20px;
+}
+
+.penutup {
+    margin-top: 30px;
+    text-align: right;
+}
