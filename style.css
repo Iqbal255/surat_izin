@@ -43,3 +43,23 @@ p {
     text-align: right;
     margin-top: 50px;
 }
+/* Tombol Print */
+.print-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Sembunyikan tombol saat dicetak */
+@media print {
+    .print-btn {
+        display: none;
+    }
+}
