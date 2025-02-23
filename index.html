@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
+    <!-- Tombol Print -->
+    <button class="print-btn" onclick="printSurat()">Print to PDF</button>
+
     <div class="background">
         <div class="container">
             <div class="surat">
@@ -46,5 +50,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function printSurat() {
+            let originalContent = document.body.innerHTML;
+            let printContent = document.querySelector('.container').outerHTML;
+            document.body.innerHTML = printContent;
+            window.print();
+            document.body.innerHTML = originalContent;
+        }
+    </script>
+
 </body>
 </html>
